@@ -4,6 +4,7 @@ import AboutMe from "./Paginas/aboutMe/Index";
 import Menu from "./components/menu/Index";
 import Footer from "components/Footer/Index";
 import DefaultPage from "components/DefaultPage/Index";
+import Post from "Paginas/post/Index";
 
 function AppRoutes() {
    return (
@@ -14,6 +15,7 @@ function AppRoutes() {
             <Route path="/" element={<DefaultPage />}>
                <Route index element={<Homepage />} />
                <Route path="aboutme" element={<AboutMe />} />
+               <Route path="post/:id" element={<Post />} />
             </Route>
             <Route path="*" element={<div>Página não encontrada</div>} />
          </Routes>
